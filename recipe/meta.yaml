@@ -1,5 +1,5 @@
 {% set name = "hdf5-otm" %}
-{% set version = "1.10.9" %}
+{% set version = "1.10.11" %}
 {% set maj_min_ver = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-{{ maj_min_ver }}/hdf5-{{ version }}/src/hdf5-{{ version }}.tar.gz
-    sha256: f5b77f59b705a755a5a223372d0222c7bc408fe8db6fa8d9d7ecf8bce291b8dd
+    sha256: 341684c5c0976b8c7e6951735a400275a90693604464cac73e9f323c696fc79c
 
 build:
   number: 0
