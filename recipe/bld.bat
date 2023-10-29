@@ -16,7 +16,8 @@ cmake -G "MinGW Makefiles" ^
       -D HDF5_BUILD_HL_GIF_TOOLS:BOOL=ON ^
       -D HDF5_ENABLE_PARALLEL:BOOL=ON ^
       -D HDF5_ENABLE_THREADSAFE:BOOL=ON ^
-      -D ALLOW_UNSUPPORTED:BOOL=ON
+      -D ALLOW_UNSUPPORTED:BOOL=ON ^
+      -D DEFAULT_API_VERSION:STRING=v110
 
 :: Build
 cmake --build build --parallel
